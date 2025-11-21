@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Examen</title>
+  <link rel="stylesheet" href="../statics/styles.css">
+  <script src="../js/examen.js" defer></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>EXAMEN</h2>
+    <form id="formExamen">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="materia">Materia:</label>
+      <select id="materia" name="materia" required>
+        <option value="">Seleccione una materia</option>
+        <option value="Python">Python</option>
+        <option value="SQL">SQL</option>
+        <option value="Java">Java</option>
+        <option value="CSS">CSS</option>
+      </select>
+
+      <p>Pregunta 1: ¿Qué lenguaje se usa para estilos en la web?</p>
+      <div class="radio-group">
+        <label><input type="radio" name="pregunta1" value="HTML" required> HTML</label>
+        <label><input type="radio" name="pregunta1" value="CSS"> CSS</label>
+        <label><input type="radio" name="pregunta1" value="Python"> Python</label>
+        <label><input type="radio" name="pregunta1" value="SQL"> SQL</label>
+      </div>
+
+      <button type="submit" class="btn">Enviar Examen</button>
+    </form>
+  </div>
+</body>
+</html>
